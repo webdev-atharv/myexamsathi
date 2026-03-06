@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExamSathi — India's #1 Free Exam Info Hub | JEE NEET UPSC SSC Banking</title>
+
+<!-- Google Verification -->
+<meta name="google-site-verification" content="ohrnrG1T4SQZ5F1-iM5G3uln_GxW_YdJgGI9_nTcCYw" />
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="ExamSathi - Free exam information for Indian students. Complete details for JEE, NEET, UPSC, SSC, Banking, Railways, Defence, Teaching exams. Dates, eligibility, syllabus and official links. Not an official government website.">
+<meta name="keywords" content="JEE 2025, NEET 2025, UPSC CSE, SSC CGL, IBPS PO, SBI PO, RRB NTPC, NDA, CDS, CTET, CAT, Indian competitive exams, exam dates 2025, government jobs India, sarkari naukri, exam eligibility, exam syllabus">
+<meta name="author" content="ExamSathi">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="3 days">
+
+<!-- Open Graph (for WhatsApp & Facebook preview) -->
+<meta property="og:title" content="ExamSathi — India's Free Exam Info Hub">
+<meta property="og:description" content="Complete details for JEE, NEET, UPSC, SSC, Banking, Railways & 21+ Indian exams. Dates, eligibility, syllabus — all free!">
+<meta property="og:url" content="https://examsathi632026.github.io/examsathi/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ExamSathi">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ExamSathi — India's Free Exam Info Hub">
+<meta name="twitter:description" content="JEE, NEET, UPSC, SSC, Banking & 21+ exams — dates, eligibility, syllabus all free!">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://examsathi632026.github.io/examsathi/">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{
+  --o:#FF5000;--o2:#FF7733;--og:rgba(255,80,0,0.25);
+  --bg:#060606;--bg2:#0C0C0C;
+  --glass:rgba(255,255,255,0.04);--glass2:rgba(255,255,255,0.07);--glass3:rgba(255,255,255,0.02);
+  --border:rgba(255,255,255,0.08);--border2:rgba(255,80,0,0.25);
+  --white:#fff;--t1:rgba(255,255,255,0.92);--t2:rgba(255,255,255,0.55);--t3:rgba(255,255,255,0.28);
+  --green:#00FF94;--amber:#FFAA00;--red:#FF4444;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:#040404}
+::-webkit-scrollbar-thumb{background:var(--o);border-radius:2px}
+
+/* ── DISCLAIMER ── */
+.disc{
+  background:linear-gradient(90deg,rgba(255,80,0,0.12),rgba(255,80,0,0.07),rgba(255,80,0,0.12));
+  border-bottom:1px solid rgba(255,80,0,0.18);
+  padding:7px 5%;display:flex;align-items:center;gap:10px;
+  font-size:0.73rem;color:rgba(255,200,150,0.88);
+  backdrop-filter:blur(20px);position:relative;z-index:1001;
+}
+.disc i{color:var(--o);flex-shrink:0;font-size:0.8rem}
+.disc strong{color:var(--o)}
+
+/* ── NAV ── */
+nav{
+  position:sticky;top:0;z-index:1000;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 5%;height:62px;
+  background:rgba(6,6,6,0.65);
+  backdrop-filter:blur(36px) saturate(180%);
+  -webkit-backdrop-filter:blur(36px) saturate(180%);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  box-shadow:0 1px 0 rgba(255,80,0,0.08);
+}
+.logo{font-family:'Syne',sans-serif;font-size:1.35rem;font-weight:800;text-decoration:none;color:white;display:flex;align-items:center;gap:5px}
+.logo .ac{color:var(--o)}
+.logo .dot{width:6px;height:6px;background:var(--o);border-radius:50%;box-shadow:0 0 8px var(--o)}
+.nav-r{display:flex;align-items:center;gap:6px}
+.nl{padding:6px 13px;border-radius:7px;font-size:0.8rem;font-weight:500;color:var(--t2);background:transparent;border:none;cursor:pointer;transition:all 0.2s;font-family:'Inter',sans-serif}
+.nl:hover{color:white;background:var(--glass2)}
+.nb{background:var(--o);color:white;border:none;cursor:pointer;padding:8px 18px;border-radius:8px;font-size:0.8rem;font-weight:600;font-family:'Inter',sans-serif;transition:all 0.25s;box-shadow:0 0 18px rgba(255,80,0,0.3)}
+.nb:hover{background:var(--o2);box-shadow:0 0 28px rgba(255,80,0,0.5);transform:translateY(-1px)}
+
+/* ── TICKER ── */
+.ticker{
+  background:rgba(255,80,0,0.05);
+  border-bottom:1px solid rgba(255,80,0,0.12);
+  display:flex;align-items:center;height:36px;overflow:hidden;padding:0 5%;
+}
+.tick-lbl{
+  background:var(--o);color:white;font-size:0.62rem;font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;padding:3px 11px;border-radius:4px;
+  white-space:nowrap;margin-right:14px;flex-shrink:0;display:flex;align-items:center;gap:5px;
+}
+.tick-lbl .pulse{width:5px;height:5px;border-radius:50%;background:white;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.tick-track{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,black 4%,black 96%,transparent)}
+.tick-inner{display:flex;animation:scroll 55s linear infinite;white-space:nowrap}
+.tick-inner:hover{animation-play-state:paused}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tick-item{display:inline-flex;align-items:center;gap:7px;padding:0 26px;font-size:0.76rem;color:var(--t2);border-right:1px solid var(--border)}
+.tick-item .td{width:4px;height:4px;border-radius:50%;background:var(--o);flex-shrink:0}
+.ttag{font-size:0.62rem;font-weight:700;padding:2px 6px;border-radius:3px;text-transform:uppercase;letter-spacing:0.04em;flex-shrink:0}
+.t-new{background:rgba(0,255,148,0.12);color:var(--green);border:1px solid rgba(0,255,148,0.18)}
+.t-hot{background:rgba(255,80,0,0.12);color:var(--o);border:1px solid rgba(255,80,0,0.18)}
+.t-alert{background:rgba(255,68,68,0.12);color:var(--red);border:1px solid rgba(255,68,68,0.18)}
+.t-upd{background:rgba(255,170,0,0.1);color:var(--amber);border:1px solid rgba(255,170,0,0.18)}
+
+/* ── HERO ── */
+.hero{
+  min-height:88vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:70px 5% 56px;position:relative;overflow:hidden;
+}
+.orb1{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(255,80,0,0.11) 0%,transparent 70%);top:-280px;left:50%;transform:translateX(-50%);pointer-events:none}
+.orb2{position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(255,120,0,0.05) 0%,transparent 70%);bottom:-80px;right:8%;pointer-events:none}
+.hgrid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,80,0,0.032) 1px,transparent 1px),linear-gradient(90deg,rgba(255,80,0,0.032) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 85% 85% at 50% 50%,black 20%,transparent);
+}
+.hc{position:relative;z-index:1;max-width:740px;width:100%}
+.hbadge{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(255,80,0,0.07);border:1px solid rgba(255,80,0,0.18);
+  padding:5px 13px;border-radius:6px;font-size:0.73rem;font-weight:500;
+  color:rgba(255,160,110,0.9);margin-bottom:18px;
+  backdrop-filter:blur(12px);animation:fup 0.6s ease both;
+}
+.hlive{width:5px;height:5px;background:var(--green);border-radius:50%;animation:pulse 1.5s infinite;box-shadow:0 0 5px var(--green)}
+h1{font-family:'Syne',sans-serif;font-size:clamp(2.5rem,6vw,4.6rem);font-weight:800;line-height:1.08;margin-bottom:14px;animation:fup 0.7s 0.1s ease both}
+h1 em{color:var(--o);font-style:normal;text-shadow:0 0 50px rgba(255,80,0,0.35)}
+.hsub{color:var(--t2);font-size:0.97rem;line-height:1.7;max-width:500px;margin:0 auto 32px;animation:fup 0.7s 0.18s ease both}
+
+/* HERO SEARCH */
+.hs-wrap{position:relative;max-width:540px;margin:0 auto 12px;animation:fup 0.7s 0.26s ease both}
+.hs-box{
+  display:flex;align-items:center;
+  background:rgba(255,255,255,0.055);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:13px;padding:5px 5px 5px 18px;
+  backdrop-filter:blur(28px) saturate(160%);
+  -webkit-backdrop-filter:blur(28px) saturate(160%);
+  transition:all 0.3s;
+  box-shadow:0 8px 32px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.hs-box:focus-within{border-color:rgba(255,80,0,0.38);background:rgba(255,80,0,0.045);box-shadow:0 8px 40px rgba(0,0,0,0.4),0 0 0 4px rgba(255,80,0,0.07)}
+.hs-box i{color:var(--t3);font-size:0.88rem;margin-right:9px;flex-shrink:0}
+.hs-box input{flex:1;background:none;border:none;outline:none;color:white;font-family:'Inter',sans-serif;font-size:0.92rem;padding:10px 0}
+.hs-box input::placeholder{color:var(--t3)}
+.hs-btn{background:var(--o);color:white;border:none;cursor:pointer;padding:11px 20px;border-radius:9px;font-size:0.82rem;font-weight:600;font-family:'Inter',sans-serif;transition:all 0.2s;white-space:nowrap;box-shadow:0 0 18px rgba(255,80,0,0.28)}
+.hs-btn:hover{background:var(--o2);box-shadow:0 0 26px rgba(255,80,0,0.45)}
+.sugg{
+  position:absolute;top:calc(100% + 7px);left:0;right:0;
+  background:rgba(10,10,10,0.96);border:1px solid var(--border);
+  border-radius:11px;overflow:hidden;z-index:100;
+  backdrop-filter:blur(28px);
+  box-shadow:0 20px 56px rgba(0,0,0,0.65);
+  display:none;
+}
+.sugg.show{display:block}
+.si{display:flex;align-items:center;gap:11px;padding:11px 15px;cursor:pointer;transition:background 0.15s;border-bottom:1px solid rgba(255,255,255,0.03)}
+.si:last-child{border-bottom:none}
+.si:hover{background:rgba(255,80,0,0.07)}
+.si-icon{font-size:1.05rem;width:26px;text-align:center}
+.si-name{font-size:0.85rem;font-weight:500;color:var(--t1)}
+.si-cat{font-size:0.68rem;color:var(--t3)}
+.si-tag{margin-left:auto;font-size:0.62rem;font-weight:700;padding:2px 7px;border-radius:3px}
+
+.hhint{font-size:0.72rem;color:var(--t3);animation:fup 0.7s 0.32s ease both}
+.hhint span{color:rgba(255,120,50,0.65)}
+
+.hstats{display:flex;justify-content:center;gap:0;margin-top:52px;animation:fup 0.7s 0.42s ease both;border:1px solid var(--border);border-radius:14px;overflow:hidden;backdrop-filter:blur(16px);background:rgba(255,255,255,0.02)}
+.hstat{text-align:center;padding:18px 32px;border-right:1px solid var(--border)}
+.hstat:last-child{border-right:none}
+.hn{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;line-height:1}
+.hn em{color:var(--o);font-style:normal}
+.hl{font-size:0.68rem;color:var(--t3);margin-top:4px;text-transform:uppercase;letter-spacing:0.1em}
+
+@keyframes fup{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── SECTIONS ── */
+section{padding:68px 5%}
+.sl{font-size:0.67rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--o);margin-bottom:7px}
+.st{font-family:'Syne',sans-serif;font-size:clamp(1.65rem,3.2vw,2.3rem);font-weight:800;line-height:1.2;margin-bottom:9px}
+.ss{color:var(--t2);font-size:0.88rem;line-height:1.65;max-width:460px}
+.sh{margin-bottom:40px}
+
+/* ── FILTERS ── */
+.fb{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:32px}
+.ft{padding:6px 14px;border-radius:7px;cursor:pointer;font-size:0.78rem;font-weight:500;background:var(--glass3);border:1px solid var(--border);color:var(--t2);transition:all 0.2s;white-space:nowrap;backdrop-filter:blur(8px)}
+.ft:hover{color:white;background:rgba(255,80,0,0.06);border-color:rgba(255,80,0,0.18)}
+.ft.on{background:var(--o);border-color:var(--o);color:white;box-shadow:0 0 14px rgba(255,80,0,0.28)}
+
+/* ── EXAM CARDS ── */
+.eg{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:12px}
+.ec{
+  background:rgba(255,255,255,0.032);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:13px;padding:20px;cursor:pointer;
+  transition:all 0.28s;position:relative;overflow:hidden;
+  backdrop-filter:blur(22px) saturate(150%);
+  -webkit-backdrop-filter:blur(22px) saturate(150%);
+  box-shadow:0 2px 20px rgba(0,0,0,0.22),inset 0 1px 0 rgba(255,255,255,0.04);
+  animation:fup 0.5s ease both;
+}
+.ec::before{content:'';position:absolute;top:0;left:16px;right:16px;height:1px;background:linear-gradient(90deg,transparent,rgba(255,80,0,0.45),transparent);opacity:0;transition:opacity 0.3s}
+.ec:hover{transform:translateY(-5px);border-color:rgba(255,80,0,0.2);background:rgba(255,255,255,0.052);box-shadow:0 16px 44px rgba(0,0,0,0.42),inset 0 1px 0 rgba(255,255,255,0.07),0 0 0 1px rgba(255,80,0,0.08)}
+.ec:hover::before{opacity:1}
+.ect{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:13px}
+.ei{width:40px;height:40px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.07)}
+.eb{font-size:0.61rem;font-weight:700;padding:2px 8px;border-radius:3px;letter-spacing:0.06em;text-transform:uppercase}
+.b-eng{background:rgba(255,80,0,0.1);color:#FF9977;border:1px solid rgba(255,80,0,0.16)}
+.b-med{background:rgba(0,255,148,0.08);color:#66FFB8;border:1px solid rgba(0,255,148,0.13)}
+.b-civ{background:rgba(255,170,0,0.09);color:#FFCC77;border:1px solid rgba(255,170,0,0.14)}
+.b-ban{background:rgba(255,255,255,0.05);color:#AAAAAA;border:1px solid rgba(255,255,255,0.08)}
+.b-rai{background:rgba(255,80,0,0.08);color:#FFAA88;border:1px solid rgba(255,80,0,0.12)}
+.b-def{background:rgba(255,170,0,0.08);color:#FFCC66;border:1px solid rgba(255,170,0,0.12)}
+.b-tea{background:rgba(0,255,148,0.07);color:#66FFCC;border:1px solid rgba(0,255,148,0.1)}
+.b-law{background:rgba(255,255,255,0.04);color:#CCCCCC;border:1px solid rgba(255,255,255,0.06)}
+.b-mba{background:rgba(255,80,0,0.08);color:var(--o2);border:1px solid rgba(255,80,0,0.12)}
+.b-sta{background:rgba(255,170,0,0.07);color:#FFDDA0;border:1px solid rgba(255,170,0,0.1)}
+.en{font-family:'Syne',sans-serif;font-size:1.02rem;font-weight:700;margin-bottom:2px;color:var(--t1)}
+.ef{font-size:0.7rem;color:var(--t3);margin-bottom:13px;line-height:1.4}
+.em{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
+.mr{display:flex;align-items:center;gap:7px;font-size:0.76rem;color:var(--t2)}
+.mr i{width:12px;color:var(--o);opacity:0.6;font-size:0.68rem}
+.mr strong{color:var(--t1);font-weight:500}
+.efoot{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid rgba(255,255,255,0.05)}
+.vn{font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;color:var(--green)}
+.vl{font-size:0.64rem;color:var(--t3)}
+.vb{background:rgba(255,80,0,0.07);border:1px solid rgba(255,80,0,0.16);color:var(--o);padding:6px 12px;border-radius:6px;font-size:0.74rem;font-weight:600;cursor:pointer;transition:all 0.2s;font-family:'Inter',sans-serif}
+.vb:hover{background:var(--o);color:white;box-shadow:0 0 12px rgba(255,80,0,0.32)}
+
+/* ── TIMELINE ── */
+.tls{background:var(--bg2)}
+.tl{position:relative;padding-left:26px;max-width:780px}
+.tl::before{content:'';position:absolute;left:6px;top:4px;bottom:4px;width:1px;background:linear-gradient(to bottom,var(--o),rgba(255,80,0,0.08))}
+.tli{position:relative;margin-bottom:14px;background:rgba(255,255,255,0.025);border:1px solid var(--border);border-radius:10px;padding:13px 15px;transition:all 0.22s;backdrop-filter:blur(14px)}
+.tli:hover{border-color:rgba(255,80,0,0.2);transform:translateX(3px);background:rgba(255,80,0,0.035)}
+.tld{position:absolute;left:-23px;top:15px;width:8px;height:8px;border-radius:50%;background:var(--o);border:2px solid var(--bg2);box-shadow:0 0 9px rgba(255,80,0,0.5)}
+.tm{font-size:0.64rem;color:var(--o);font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px}
+.tevs{display:flex;flex-wrap:wrap;gap:5px}
+.tev{background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:3px 8px;border-radius:4px;font-size:0.72rem;color:var(--t2)}
+
+/* ── TABLE ── */
+.tw{overflow-x:auto;border-radius:11px;border:1px solid var(--border);backdrop-filter:blur(10px)}
+.tb{width:100%;border-collapse:collapse}
+.tb th{background:rgba(255,255,255,0.02);padding:10px 15px;font-size:0.67rem;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:0.1em;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;font-family:'Syne',sans-serif}
+.tb td{padding:11px 15px;border-bottom:1px solid rgba(255,255,255,0.025);font-size:0.82rem;color:var(--t1)}
+.tb tr:last-child td{border-bottom:none}
+.tb tr:hover td{background:rgba(255,80,0,0.022)}
+.db{padding:2px 7px;border-radius:3px;font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em}
+.dh{background:rgba(255,80,0,0.11);color:var(--o2);border:1px solid rgba(255,80,0,0.16)}
+.dvh{background:rgba(255,68,68,0.1);color:#FF8888;border:1px solid rgba(255,68,68,0.15)}
+.dm{background:rgba(255,255,255,0.05);color:#AAAAAA;border:1px solid var(--border)}
+.stars{color:var(--amber);font-size:0.7rem}
+
+/* ── RESOURCES ── */
+.rg{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:9px}
+.rc{background:rgba(255,255,255,0.025);border:1px solid var(--border);border-radius:10px;padding:18px 13px;text-align:center;cursor:pointer;transition:all 0.22s;text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;gap:8px;backdrop-filter:blur(14px)}
+.rc:hover{border-color:rgba(255,80,0,0.22);transform:translateY(-3px);background:rgba(255,80,0,0.04)}
+.ri{width:40px;height:40px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;background:rgba(255,80,0,0.07);color:var(--o);border:1px solid rgba(255,80,0,0.1)}
+.rn{font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem}
+.rd{font-size:0.68rem;color:var(--t3)}
+
+/* ── FAQ ── */
+.fqs{background:var(--bg2)}
+.fql{max-width:660px}
+.fqi{border:1px solid var(--border);border-radius:9px;margin-bottom:7px;overflow:hidden;transition:all 0.22s}
+.fqi.open{border-color:rgba(255,80,0,0.2)}
+.fqq{padding:14px 15px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:13px;font-weight:500;font-size:0.86rem;background:rgba(255,255,255,0.022);backdrop-filter:blur(10px)}
+.fqq i{color:var(--o);transition:transform 0.3s;flex-shrink:0;font-size:0.82rem}
+.fqi.open .fqq i{transform:rotate(45deg)}
+.fqa{max-height:0;overflow:hidden;transition:max-height 0.32s ease}
+.fqi.open .fqa{max-height:160px}
+.fqa p{padding:12px 15px;color:var(--t2);font-size:0.81rem;line-height:1.68;background:rgba(255,80,0,0.012)}
+
+/* ── MODAL ── */
+.mo{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,0.78);backdrop-filter:blur(18px) saturate(120%);-webkit-backdrop-filter:blur(18px) saturate(120%);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity 0.28s}
+.mo.open{opacity:1;pointer-events:all}
+.modal{background:rgba(11,11,11,0.94);border:1px solid rgba(255,80,0,0.16);border-radius:15px;padding:26px;max-width:510px;width:100%;max-height:90vh;overflow-y:auto;transform:translateY(18px) scale(0.98);transition:all 0.28s;backdrop-filter:blur(36px) saturate(160%);-webkit-backdrop-filter:blur(36px) saturate(160%);box-shadow:0 0 70px rgba(255,80,0,0.09),0 36px 72px rgba(0,0,0,0.7),inset 0 1px 0 rgba(255,255,255,0.05)}
+.mo.open .modal{transform:translateY(0) scale(1)}
+.mc{position:absolute;top:13px;right:14px;background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--t2);cursor:pointer;font-size:0.8rem;width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
+.mc:hover{background:rgba(255,80,0,0.14);border-color:rgba(255,80,0,0.28);color:white}
+.mh{position:relative;margin-bottom:18px}
+.mtt{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;margin-bottom:3px}
+.ms{color:var(--t3);font-size:0.75rem}
+.msec{margin-bottom:15px}
+.msec h4{font-family:'Syne',sans-serif;font-size:0.67rem;font-weight:700;color:var(--o);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:7px}
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.mi{background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.05);border-radius:7px;padding:9px 11px;backdrop-filter:blur(8px)}
+.mi .il{font-size:0.62rem;color:var(--t3);margin-bottom:3px;text-transform:uppercase;letter-spacing:0.07em}
+.mi .iv{font-weight:500;font-size:0.8rem;color:var(--t1)}
+
+/* ── FOOTER ── */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:30px 5%}
+.ft-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:22px;margin-bottom:22px}
+.fl{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:800;margin-bottom:6px}
+.fl span{color:var(--o)}
+.ftag{font-size:0.73rem;color:var(--t3);max-width:260px;line-height:1.55}
+.flinks{display:flex;flex-direction:column;gap:5px}
+.flinks a{font-size:0.75rem;color:var(--t2);text-decoration:none;transition:color 0.2s}
+.flinks a:hover{color:white}
+.flt{font-size:0.64rem;font-weight:700;color:var(--o);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px}
+.fb2{border-top:1px solid var(--border);padding-top:18px;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.fdis{background:rgba(255,80,0,0.055);border:1px solid rgba(255,80,0,0.13);padding:10px 14px;border-radius:8px;font-size:0.71rem;color:rgba(255,185,130,0.85);line-height:1.6;max-width:580px;display:flex;gap:9px;align-items:flex-start}
+.fdis i{color:var(--o);flex-shrink:0;margin-top:2px;font-size:0.8rem}
+.fcp{font-size:0.68rem;color:var(--t3)}
+
+/* ── BACK TOP ── */
+#btt{position:fixed;bottom:22px;right:22px;z-index:999;width:38px;height:38px;border-radius:8px;background:var(--o);color:white;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:0.82rem;box-shadow:0 4px 18px rgba(255,80,0,0.38);opacity:0;transform:translateY(7px);transition:all 0.28s}
+#btt.show{opacity:1;transform:translateY(0)}
+#btt:hover{box-shadow:0 4px 24px rgba(255,80,0,0.55)}
+
+.nor{grid-column:1/-1;text-align:center;padding:52px 20px;color:var(--t3)}
+.nor i{font-size:1.9rem;margin-bottom:11px;opacity:0.28;display:block}
+
+@media(max-width:768px){
+  h1{font-size:2.3rem}
+  .hstat{padding:14px 18px}
+  .nav-r .nl{display:none}
+  .mg{grid-template-columns:1fr}
+  .ft-top{flex-direction:column}
+  .hstats{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+
+<!-- DISCLAIMER BAR -->
+<div class="disc">
+  <i class="fas fa-exclamation-triangle"></i>
+  <span><strong>⚠️ NOT AN OFFICIAL GOVERNMENT WEBSITE.</strong> ExamSathi is a fully independent student reference tool — not affiliated with NTA, UPSC, SSC, IBPS, or any government body. Always verify from official portals before applying.</span>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <a class="logo" href="#">Exam<span class="ac">Sathi</span><span class="dot"></span></a>
+  <div class="nav-r">
+    <button class="nl" onclick="go('exams')">Exams</button>
+    <button class="nl" onclick="go('dates')">Dates</button>
+    <button class="nl" onclick="go('faq')">FAQ</button>
+    <button class="nb" onclick="go('exams')">Browse Exams</button>
+  </div>
+</nav>
+
+<!-- LIVE NEWS TICKER -->
+<div class="ticker" id="tickerEl">
+  <div class="tick-lbl"><span class="pulse"></span>LIVE NEWS</div>
+  <div class="tick-track">
+    <div class="tick-inner" id="tickerInner"></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="orb1"></div><div class="orb2"></div><div class="hgrid"></div>
+  <div class="hc">
+    <div class="hbadge"><span class="hlive"></span>&nbsp;Live Updates · 2025–26 Season</div>
+    <h1>India's Complete<br><em>Exam Universe</em></h1>
+    <p class="hsub">Search any exam — JEE, NEET, UPSC, Banking, Railways & more. Real dates, real data, zero confusion.</p>
+
+    <div class="hs-wrap">
+      <div class="hs-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="hsInput" placeholder="Search — try 'JEE', 'UPSC', 'Banking', 'Defence'..." autocomplete="off"
+          oninput="hsi(this.value)" onkeydown="hsk(event)">
+        <button class="hs-btn" onclick="doSearch()"><i class="fas fa-arrow-right"></i>&nbsp;Search</button>
+      </div>
+      <div class="sugg" id="sugg"></div>
+    </div>
+    <div class="hhint">Press <span>Enter</span> to search all · Click any suggestion to view details instantly</div>
+
+    <div class="hstats">
+      <div class="hstat"><div class="hn">21<em>+</em></div><div class="hl">Exams</div></div>
+      <div class="hstat"><div class="hn">10<em>+</em></div><div class="hl">Categories</div></div>
+      <div class="hstat"><div class="hn">1<em>Cr+</em></div><div class="hl">Students</div></div>
+      <div class="hstat"><div class="hn"><em>Free</em></div><div class="hl">Always</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXAM SECTION -->
+<section id="exams">
+  <div class="sh">
+    <div class="sl">All Exams</div>
+    <div class="st">Find Your Path</div>
+    <div class="ss">Filter by category · Click any card for full details, syllabus & official links.</div>
+  </div>
+  <div class="fb" id="fb">
+    <div class="ft on" onclick="fcat('all',this)">All</div>
+    <div class="ft" onclick="fcat('Engineering',this)">⚙️ Engineering</div>
+    <div class="ft" onclick="fcat('Medical',this)">🏥 Medical</div>
+    <div class="ft" onclick="fcat('Civil Services',this)">🏛️ Civil Services</div>
+    <div class="ft" onclick="fcat('Banking',this)">🏦 Banking</div>
+    <div class="ft" onclick="fcat('Railways',this)">🚂 Railways</div>
+    <div class="ft" onclick="fcat('Defence',this)">🛡️ Defence</div>
+    <div class="ft" onclick="fcat('Teaching',this)">📚 Teaching</div>
+    <div class="ft" onclick="fcat('Law',this)">⚖️ Law</div>
+    <div class="ft" onclick="fcat('MBA',this)">💼 MBA</div>
+    <div class="ft" onclick="fcat('State PSC',this)">🗺️ State PSC</div>
+  </div>
+  <div class="eg" id="eg"></div>
+</section>
+
+<!-- TIMELINE -->
+<section class="tls" id="dates">
+  <div class="sh">
+    <div class="sl">Calendar</div>
+    <div class="st">Important Dates 2025–26</div>
+    <div class="ss">Upcoming notifications, registration windows & exam dates.</div>
+  </div>
+  <div class="tl">
+    <div class="tli"><div class="tld"></div><div class="tm">January 2025</div><div class="tevs"><span class="tev">JEE Main Session 1</span><span class="tev">IBPS Clerk Result</span><span class="tev">SSC CGL Tier II</span></div></div>
+    <div class="tli"><div class="tld"></div><div class="tm">February 2025</div><div class="tevs"><span class="tev">JEE Main Session 2</span><span class="tev">UPSC Prelims Notification</span><span class="tev">NDA I Notification</span></div></div>
+    <div class="tli"><div class="tld"></div><div class="tm">April 2025</div><div class="tevs"><span class="tev">NEET UG Registration</span><span class="tev">CLAT 2025</span><span class="tev">NDA I Exam</span></div></div>
+    <div class="tli"><div class="tld"></div><div class="tm">May 2025</div><div class="tevs"><span class="tev">UPSC CSE Prelims</span><span class="tev">JEE Advanced</span><span class="tev">NEET UG Exam</span><span class="tev">SBI PO Notification</span></div></div>
+    <div class="tli"><div class="tld"></div><div class="tm">Jun–Jul 2025</div><div class="tevs"><span class="tev">IBPS PO Notification</span><span class="tev">RRB NTPC CBT 1</span><span class="tev">SSC CHSL Exam</span></div></div>
+    <div class="tli"><div class="tld"></div><div class="tm">Sep–Oct 2025</div><div class="tevs"><span class="tev">SSC CGL Exam</span><span class="tev">NDA II Exam</span><span class="tev">IBPS PO Mains</span></div></div>
+    <div class="tli"><div class="tld"></div><div class="tm">November 2025</div><div class="tevs"><span class="tev">CAT 2025 Exam</span><span class="tev">UPSC CSE Mains</span><span class="tev">CLAT 2026 Notification</span></div></div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section>
+  <div class="sh">
+    <div class="sl">Compare</div>
+    <div class="st">Top Exams Side by Side</div>
+    <div class="ss">Difficulty, salary, vacancies & attempts at a glance.</div>
+  </div>
+  <div class="tw">
+    <table class="tb">
+      <thead><tr><th>Exam</th><th>Body</th><th>Vacancies</th><th>Difficulty</th><th>Avg Salary</th><th>Attempts</th><th>Rating</th></tr></thead>
+      <tbody>
+        <tr><td><strong>UPSC CSE</strong></td><td>UPSC</td><td>~1,000</td><td><span class="db dvh">Very Hard</span></td><td>₹56,000+/mo</td><td>6 (Gen)</td><td><span class="stars">★★★★★</span></td></tr>
+        <tr><td><strong>JEE Advanced</strong></td><td>IIT/NTA</td><td>~17,000</td><td><span class="db dh">Hard</span></td><td>₹8–25 LPA</td><td>2 consec.</td><td><span class="stars">★★★★★</span></td></tr>
+        <tr><td><strong>NEET UG</strong></td><td>NTA</td><td>~1,08,000</td><td><span class="db dh">Hard</span></td><td>₹6–20 LPA</td><td>No limit</td><td><span class="stars">★★★★★</span></td></tr>
+        <tr><td><strong>SBI PO</strong></td><td>SBI</td><td>~2,000</td><td><span class="db dh">Mod-Hard</span></td><td>₹52,000+/mo</td><td>4 (Gen)</td><td><span class="stars">★★★★☆</span></td></tr>
+        <tr><td><strong>SSC CGL</strong></td><td>SSC</td><td>~14,000</td><td><span class="db dm">Moderate</span></td><td>₹35K–80K</td><td>No limit</td><td><span class="stars">★★★★☆</span></td></tr>
+        <tr><td><strong>CAT</strong></td><td>IIMs</td><td>~5,000</td><td><span class="db dvh">Very Hard</span></td><td>₹15–30 LPA</td><td>No limit</td><td><span class="stars">★★★★☆</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section style="background:var(--bg2)">
+  <div class="sh">
+    <div class="sl">Official Portals</div>
+    <div class="st">Quick Resources</div>
+    <div class="ss">Direct links to official government exam websites — always verify here.</div>
+  </div>
+  <div class="rg">
+    <a class="rc" href="https://nta.ac.in" target="_blank"><div class="ri"><i class="fas fa-university"></i></div><div class="rn">NTA</div><div class="rd">JEE · NEET · CUET</div></a>
+    <a class="rc" href="https://upsc.gov.in" target="_blank"><div class="ri"><i class="fas fa-landmark"></i></div><div class="rn">UPSC</div><div class="rd">Civil Services</div></a>
+    <a class="rc" href="https://ssc.nic.in" target="_blank"><div class="ri"><i class="fas fa-file-alt"></i></div><div class="rn">SSC</div><div class="rd">CGL · CHSL · MTS</div></a>
+    <a class="rc" href="https://ibps.in" target="_blank"><div class="ri"><i class="fas fa-piggy-bank"></i></div><div class="rn">IBPS</div><div class="rd">PO · Clerk · SO</div></a>
+    <a class="rc" href="https://indianrailways.gov.in" target="_blank"><div class="ri"><i class="fas fa-train"></i></div><div class="rn">RRB</div><div class="rd">NTPC · Group D</div></a>
+    <a class="rc" href="https://joinindianarmy.nic.in" target="_blank"><div class="ri"><i class="fas fa-shield-alt"></i></div><div class="rn">NDA/CDS</div><div class="rd">Defence Entry</div></a>
+    <a class="rc" href="https://sbi.co.in/careers" target="_blank"><div class="ri"><i class="fas fa-coins"></i></div><div class="rn">SBI</div><div class="rd">PO · Clerk</div></a>
+    <a class="rc" href="https://consortiumofnlus.ac.in" target="_blank"><div class="ri"><i class="fas fa-balance-scale"></i></div><div class="rn">CLAT</div><div class="rd">Law Entrance</div></a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="fqs" id="faq">
+  <div class="sh">
+    <div class="sl">Help</div>
+    <div class="st">Common Questions</div>
+  </div>
+  <div class="fql">
+    <div class="fqi" onclick="tfaq(this)"><div class="fqq">Best government exam after 12th?<i class="fas fa-plus"></i></div><div class="fqa"><p>NDA (Defence), SSC CHSL (Clerical), RRB Group D (Railways) and state PSC prelims are great options. For professional courses: JEE Main (Engineering) and NEET UG (Medical) are the top picks.</p></div></div>
+    <div class="fqi" onclick="tfaq(this)"><div class="fqq">How many UPSC CSE attempts are allowed?<i class="fas fa-plus"></i></div><div class="fqa"><p>General: 6 attempts (up to age 32). OBC: 9 attempts (up to 35). SC/ST: unlimited (up to 37). EWS: 6 attempts (up to 32).</p></div></div>
+    <div class="fqi" onclick="tfaq(this)"><div class="fqq">Can I apply for JEE Main and Advanced same year?<i class="fas fa-plus"></i></div><div class="fqa"><p>Yes. First qualify JEE Main and rank in the top 2.5 lakh to become eligible for JEE Advanced. Both exams happen in the same academic year (Jan–May).</p></div></div>
+    <div class="fqi" onclick="tfaq(this)"><div class="fqq">Is NEET mandatory for all medical colleges?<i class="fas fa-plus"></i></div><div class="fqa"><p>Yes. Since 2020, NEET UG is the single national entrance for MBBS, BDS, and Ayush admissions across all government and private medical colleges in India.</p></div></div>
+    <div class="fqi" onclick="tfaq(this)"><div class="fqq">Is ExamSathi an official government website?<i class="fas fa-plus"></i></div><div class="fqa"><p>Absolutely NOT. ExamSathi is a fully independent student reference tool. We are not affiliated with NTA, UPSC, SSC, IBPS, or any government body. Always verify from official portals before taking any action.</p></div></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="fl">Exam<span>Sathi</span></div>
+      <div class="ftag">India's independent exam reference hub. Built for aspirants, by students. 100% free, always.</div>
+    </div>
+    <div class="flinks">
+      <div class="flt">Navigate</div>
+      <a href="#exams">All Exams</a>
+      <a href="#dates">Important Dates</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="flinks">
+      <div class="flt">Official Sites</div>
+      <a href="https://nta.ac.in" target="_blank">NTA Portal ↗</a>
+      <a href="https://upsc.gov.in" target="_blank">UPSC.gov.in ↗</a>
+      <a href="https://ssc.nic.in" target="_blank">SSC.nic.in ↗</a>
+    </div>
+  </div>
+  <div class="fb2">
+    <div class="fdis">
+      <i class="fas fa-exclamation-circle"></i>
+      <span><strong>⚠️ NOT AN OFFICIAL GOVERNMENT WEBSITE.</strong> ExamSathi is an independent student resource. Data is for reference only — exam dates, eligibility, and vacancies change frequently. Always verify from official government portals (NTA, UPSC, SSC, IBPS, RRB) before applying. ExamSathi bears no responsibility for decisions made based on this information.</span>
+    </div>
+    <div class="fcp">© 2025 ExamSathi · For Students, By Students</div>
+  </div>
+</footer>
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
+
+<!-- MODAL -->
+<div class="mo" id="mO" onclick="cmE(event)">
+  <div class="modal" id="mBox">
+    <button class="mc" onclick="cm()"><i class="fas fa-times"></i></button>
+    <div id="mBody"></div>
+  </div>
+</div>
+
+<script>
+const exams=[
+  {name:"JEE Main",full:"Joint Entrance Examination (Main)",cat:"Engineering",icon:"⚙️",badge:"b-eng",body:"NTA",elig:"12th PCM, 75%+",freq:"Twice/year",date:"Jan & Apr 2025",vac:"~2.5L seats",age:"Max 25 yrs",salary:"₹8–30 LPA",diff:"Hard",site:"https://jeemain.nta.ac.in",about:"Gateway to NITs, IIITs and GFTIs. One of the world's largest engineering entrance exams with over 1 million candidates annually.",syl:"Physics, Chemistry, Mathematics (Class 11 & 12)",mode:"CBT (Online)"},
+  {name:"JEE Advanced",full:"Joint Entrance Examination (Advanced)",cat:"Engineering",icon:"🏆",badge:"b-eng",body:"IITs/NTA",elig:"JEE Main top 2.5L rank",freq:"Once/year",date:"May 2025",vac:"~17,000 seats",age:"Max 25 yrs",salary:"₹10–50 LPA",diff:"Very Hard",site:"https://jeeadv.ac.in",about:"Entrance exam for 23 IITs — India's most prestigious engineering institutes. Only top 2.5 lakh JEE Main qualifiers can appear.",syl:"Physics, Chemistry, Mathematics (Advanced Level)",mode:"CBT (Online)"},
+  {name:"NEET UG",full:"National Eligibility cum Entrance Test (UG)",cat:"Medical",icon:"🏥",badge:"b-med",body:"NTA",elig:"12th PCB, 50%+",freq:"Once/year",date:"May 2025",vac:"~1,08,000 seats",age:"Min 17 yrs",salary:"₹6–25 LPA",diff:"Hard",site:"https://neet.nta.nic.in",about:"Single national test for MBBS, BDS, BAMS, BUMS admissions in India. Mandatory for all medical aspirants since 2020.",syl:"Physics, Chemistry, Biology (Class 11 & 12)",mode:"OMR (Offline)"},
+  {name:"UPSC CSE",full:"Union Public Service Commission – Civil Services",cat:"Civil Services",icon:"🏛️",badge:"b-civ",body:"UPSC",elig:"Any Graduate",freq:"Once/year",date:"May 2025 (Prelims)",vac:"~1,000",age:"21–32 yrs (Gen)",salary:"₹56,100+/mo",diff:"Very Hard",site:"https://upsc.gov.in",about:"India's most prestigious exam leading to IAS, IPS, IFS. Three-stage process: Prelims, Mains, Personality Test.",syl:"GS I–IV, CSAT, Optional Subject, Essay, Interview",mode:"Offline Written + Interview"},
+  {name:"SSC CGL",full:"Staff Selection Commission – Combined Graduate Level",cat:"Civil Services",icon:"📋",badge:"b-civ",body:"SSC",elig:"Any Graduate",freq:"Once/year",date:"Sep–Oct 2025",vac:"~14,000",age:"18–32 yrs",salary:"₹35,000–80,000",diff:"Moderate",site:"https://ssc.nic.in",about:"Recruits for Group B and C posts across central government ministries. Most popular exam for graduates seeking central government jobs.",syl:"Quantitative Aptitude, Reasoning, GK, English",mode:"CBT (Online) + Tier III/IV"},
+  {name:"SSC CHSL",full:"Combined Higher Secondary Level Examination",cat:"Civil Services",icon:"📄",badge:"b-civ",body:"SSC",elig:"12th Pass",freq:"Once/year",date:"June–July 2025",vac:"~3,000+",age:"18–27 yrs",salary:"₹25,000–50,000",diff:"Easy–Moderate",site:"https://ssc.nic.in",about:"For LDC, JSA, PA, SA and DEO posts. Most accessible SSC exam requiring only 12th qualification.",syl:"Quantitative Aptitude, Reasoning, GK, English",mode:"CBT (Online)"},
+  {name:"IBPS PO",full:"IBPS Probationary Officer Examination",cat:"Banking",icon:"🏦",badge:"b-ban",body:"IBPS",elig:"Graduate, 20–30 yrs",freq:"Once/year",date:"Oct–Nov 2025",vac:"~4,000+",age:"20–30 yrs",salary:"₹52,000+/mo",diff:"Moderate–Hard",site:"https://ibps.in",about:"Recruits POs for 12 public sector banks. Includes Prelims, Mains, Group Discussion & Interview.",syl:"Reasoning, Quantitative, English, General Awareness, Computer",mode:"CBT (Online) + GD + Interview"},
+  {name:"IBPS Clerk",full:"IBPS Clerical Cadre Examination",cat:"Banking",icon:"💳",badge:"b-ban",body:"IBPS",elig:"Any Graduate",freq:"Once/year",date:"December 2025",vac:"~6,000+",age:"20–28 yrs",salary:"₹29,000–45,000",diff:"Moderate",site:"https://ibps.in",about:"For clerical posts in 12 public sector banks. No interview stage — slightly more accessible than IBPS PO.",syl:"Reasoning, Quantitative, English, General Awareness, Computer",mode:"CBT (Online)"},
+  {name:"SBI PO",full:"State Bank of India Probationary Officer",cat:"Banking",icon:"🏧",badge:"b-ban",body:"SBI",elig:"Any Graduate",freq:"Once/year",date:"Mar–Apr 2025",vac:"~2,000",age:"21–30 yrs",salary:"₹52,000+/mo",diff:"Moderate–Hard",site:"https://sbi.co.in/careers",about:"Highly prestigious banking exam. SBI POs are among the best-paid bank officers in India.",syl:"Reasoning, Quantitative, English, General Awareness",mode:"CBT (Online) + GD + Interview"},
+  {name:"RRB NTPC",full:"Railway Recruitment Board – Non-Technical Popular Categories",cat:"Railways",icon:"🚂",badge:"b-rai",body:"RRB",elig:"12th / Graduate (by post)",freq:"Irregular",date:"2025 (expected)",vac:"~35,000+",age:"18–33 yrs",salary:"₹19,900–35,400",diff:"Moderate",site:"https://indianrailways.gov.in",about:"Recruits station master, commercial apprentice, junior clerk and other non-technical roles in Indian Railways.",syl:"General Knowledge, Mathematics, Reasoning, General Science",mode:"CBT (Online)"},
+  {name:"RRB Group D",full:"Railway Recruitment Board – Group D",cat:"Railways",icon:"🔧",badge:"b-rai",body:"RRB",elig:"10th + ITI / 12th",freq:"Irregular",date:"2025 (expected)",vac:"~1,00,000+",age:"18–33 yrs",salary:"₹18,000–25,000",diff:"Easy–Moderate",site:"https://indianrailways.gov.in",about:"Track maintainer, helper, assistant pointsman and Group D roles. Highest vacancy count among all Railway exams.",syl:"General Knowledge, Mathematics, Reasoning, General Science",mode:"CBT (Online) + Physical Test"},
+  {name:"NDA",full:"National Defence Academy Examination",cat:"Defence",icon:"⭐",badge:"b-def",body:"UPSC",elig:"12th PCM (Army: any)",freq:"Twice/year",date:"Apr & Sep 2025",vac:"~400 per cycle",age:"16.5–19.5 yrs",salary:"₹56,100+/mo",diff:"Moderate–Hard",site:"https://upsc.gov.in",about:"Gateway to Army, Navy & Air Force for Class 12 students. One of the youngest officer entry routes in India.",syl:"Mathematics, General Ability Test (English + GK)",mode:"Offline + SSB Interview"},
+  {name:"CDS",full:"Combined Defence Services Examination",cat:"Defence",icon:"🎖️",badge:"b-def",body:"UPSC",elig:"Graduate (varies by wing)",freq:"Twice/year",date:"Feb & Sep 2025",vac:"~400+",age:"19–25 yrs",salary:"₹56,100+/mo",diff:"Moderate–Hard",site:"https://upsc.gov.in",about:"For IMA, INA, AFA and OTA entries. Most prestigious graduate-level defence exam conducted by UPSC.",syl:"English, General Knowledge, Elementary Mathematics",mode:"Offline + SSB Interview"},
+  {name:"AFCAT",full:"Air Force Common Admission Test",cat:"Defence",icon:"✈️",badge:"b-def",body:"Indian Air Force",elig:"Graduate (Flying: PCM 12th)",freq:"Twice/year",date:"Feb & Aug 2025",vac:"~250+",age:"20–26 yrs",salary:"₹56,100+/mo",diff:"Moderate",site:"https://afcat.cdac.in",about:"Direct officer entry into the Indian Air Force in Flying, Technical and Ground Duty branches.",syl:"GK, Military Aptitude, English, Numerical Ability",mode:"CBT (Online) + AFSB"},
+  {name:"CTET",full:"Central Teacher Eligibility Test",cat:"Teaching",icon:"📚",badge:"b-tea",body:"CBSE/NTA",elig:"B.Ed / D.El.Ed",freq:"Twice/year",date:"Jul & Dec 2025",vac:"Eligibility cert (lifetime)",age:"No age bar",salary:"₹35,000–1,20,000",diff:"Moderate",site:"https://ctet.nic.in",about:"Mandatory eligibility test for Classes 1–8 teaching in KVS, NVS and central government schools. Valid for lifetime.",syl:"CDP, Language I & II, Mathematics/EVS/Science/SST",mode:"CBT (Online)"},
+  {name:"DSSSB",full:"Delhi Subordinate Services Selection Board",cat:"Teaching",icon:"🏫",badge:"b-tea",body:"DSSSB",elig:"Graduate + B.Ed",freq:"As per vacancies",date:"2025 (expected)",vac:"~1,500+",age:"18–30 yrs",salary:"₹47,000+/mo",diff:"Moderate",site:"https://dsssb.delhi.gov.in",about:"Recruits PRT, TGT, PGT teachers for Delhi government schools. Among highest-paying state teacher recruitment exams.",syl:"GK, Reasoning, English, Subject Pedagogy",mode:"CBT (Online)"},
+  {name:"CLAT",full:"Common Law Admission Test",cat:"Law",icon:"⚖️",badge:"b-law",body:"Consortium of NLUs",elig:"12th, 45% marks",freq:"Once/year",date:"December 2025",vac:"~3,000+ NLU seats",age:"No upper limit",salary:"₹6–25 LPA",diff:"Hard",site:"https://consortiumofnlus.ac.in",about:"National entrance for 23 National Law Universities including NLSIU, NALSAR, NUJS and other premier NLUs.",syl:"English, Current Affairs, Legal Reasoning, Logical Reasoning, Quantitative",mode:"Offline (OMR)"},
+  {name:"AILET",full:"All India Law Entrance Test",cat:"Law",icon:"🏛️",badge:"b-law",body:"NLU Delhi",elig:"12th, 50% marks",freq:"Once/year",date:"December 2025",vac:"~120 seats",age:"No limit",salary:"₹8–30 LPA",diff:"Hard",site:"https://nludelhi.ac.in",about:"Single entrance for NLU Delhi — top-ranked law school. Extremely competitive with 100+ applicants per seat.",syl:"English, GK, Reasoning, Legal Aptitude",mode:"Offline"},
+  {name:"CAT",full:"Common Admission Test",cat:"MBA",icon:"💼",badge:"b-mba",body:"IIMs",elig:"Graduate 50%+",freq:"Once/year",date:"November 2025",vac:"~5,000 IIM seats",age:"No limit",salary:"₹15–50 LPA",diff:"Very Hard",site:"https://iimcat.ac.in",about:"India's most prestigious MBA entrance. Score accepted by 1,200+ B-schools including all 20 IIMs.",syl:"VARC, Data Interpretation & LR, Quantitative Aptitude",mode:"CBT (Online)"},
+  {name:"MAT",full:"Management Aptitude Test",cat:"MBA",icon:"📊",badge:"b-mba",body:"AIMA",elig:"Graduate (any stream)",freq:"4 times/year",date:"Quarterly 2025",vac:"600+ B-schools",age:"No limit",salary:"₹5–20 LPA",diff:"Moderate",site:"https://aima.in/mat",about:"Widely accepted MBA entrance. Good alternative to CAT for state and private B-schools, conducted quarterly.",syl:"Language, Mathematical Skills, Data Analysis, Intelligence, Indian GK",mode:"CBT / Paper-Based"},
+  {name:"MPSC",full:"Maharashtra Public Service Commission",cat:"State PSC",icon:"🗺️",badge:"b-sta",body:"MPSC",elig:"Graduate",freq:"Annual",date:"2025",vac:"~400+",age:"19–38 yrs",salary:"₹56,000+/mo",diff:"Hard",site:"https://mpsc.gov.in",about:"State civil services for Maharashtra — leads to Deputy Collector, DSP, and other Group A & B state service posts.",syl:"GS I–IV, CSAT, Marathi, Optional Subject",mode:"Offline"},
+];
+
+const newsItems=[
+  {tag:"new",cls:"t-new",text:"JEE Main 2025 Session 2 registration opens — apply at jeemain.nta.ac.in"},
+  {tag:"hot",cls:"t-hot",text:"UPSC CSE 2025 Prelims notification released — 1147 vacancies announced"},
+  {tag:"alert",cls:"t-alert",text:"NEET UG 2025 exam confirmed for May 4, 2025 — admit cards to release soon"},
+  {tag:"upd",cls:"t-upd",text:"SSC CGL 2025 Tier 1 scheduled September 13–30 — download admit card"},
+  {tag:"new",cls:"t-new",text:"IBPS PO 2025 notification expected in August — start preparation now"},
+  {tag:"hot",cls:"t-hot",text:"SBI PO 2025: 600 vacancies notified — online application window closing soon"},
+  {tag:"alert",cls:"t-alert",text:"RRB NTPC 2025 CBT 1 admit card released for Zone 1 candidates — check now"},
+  {tag:"upd",cls:"t-upd",text:"CAT 2025 registration begins August — IIM Calcutta is the conducting institute"},
+  {tag:"new",cls:"t-new",text:"CLAT 2026 registration expected to open November 2025 — consortiumofnlus.ac.in"},
+  {tag:"hot",cls:"t-hot",text:"NDA I 2025 scheduled April 13 — SSB interviews from June onwards"},
+  {tag:"alert",cls:"t-alert",text:"CTET July 2025 registration live at ctet.nic.in — apply before deadline"},
+  {tag:"upd",cls:"t-upd",text:"MPSC Rajyaseva 2025 preliminary exam scheduled — check official notification"},
+];
+
+// Build ticker
+(function(){
+  const inner=document.getElementById('tickerInner');
+  const all=[...newsItems,...newsItems];
+  inner.innerHTML=all.map(n=>`<span class="tick-item"><span class="td"></span><span class="ttag ${n.cls}">${n.tag.toUpperCase()}</span>${n.text}</span>`).join('');
+})();
+
+// Render cards
+let curCat='all',curQ='';
+function render(list){
+  const g=document.getElementById('eg');
+  if(!list.length){g.innerHTML='<div class="nor"><i class="fas fa-search"></i><p>No exams found — try different keywords or clear the filter.</p></div>';return;}
+  g.innerHTML=list.map((e,i)=>`
+    <div class="ec" onclick="om(${exams.indexOf(e)})" style="animation-delay:${i*0.032}s">
+      <div class="ect"><div class="ei">${e.icon}</div><span class="eb ${e.badge}">${e.cat}</span></div>
+      <div class="en">${e.name}</div>
+      <div class="ef">${e.full}</div>
+      <div class="em">
+        <div class="mr"><i class="fas fa-building"></i><span>By <strong>${e.body}</strong></span></div>
+        <div class="mr"><i class="fas fa-user-graduate"></i><span>${e.elig}</span></div>
+        <div class="mr"><i class="fas fa-calendar-alt"></i><span>${e.date}</span></div>
+        <div class="mr"><i class="fas fa-sync"></i><span>${e.freq}</span></div>
+      </div>
+      <div class="efoot">
+        <div><div class="vn">${e.vac}</div><div class="vl">Vacancies</div></div>
+        <button class="vb">Details <i class="fas fa-arrow-right" style="font-size:0.62rem;margin-left:2px"></i></button>
+      </div>
+    </div>`).join('');
+}
+
+function fcat(cat,el){
+  curCat=cat;
+  document.querySelectorAll('.ft').forEach(t=>t.classList.remove('on'));
+  el.classList.add('on');
+  af();
+}
+
+function af(){
+  let list=exams;
+  if(curCat!=='all') list=list.filter(e=>e.cat===curCat);
+  if(curQ) list=list.filter(e=>e.name.toLowerCase().includes(curQ)||e.full.toLowerCase().includes(curQ)||e.cat.toLowerCase().includes(curQ)||e.body.toLowerCase().includes(curQ));
+  render(list);
+}
+
+// Hero search
+function hsi(v){
+  const q=v.toLowerCase().trim();
+  const s=document.getElementById('sugg');
+  if(!q){s.classList.remove('show');return;}
+  const m=exams.filter(e=>e.name.toLowerCase().includes(q)||e.cat.toLowerCase().includes(q)||e.full.toLowerCase().includes(q)).slice(0,6);
+  if(!m.length){s.classList.remove('show');return;}
+  s.innerHTML=m.map(e=>`<div class="si" onclick="selSug(${exams.indexOf(e)})"><span class="si-icon">${e.icon}</span><div><div class="si-name">${e.name}</div><div class="si-cat">${e.full}</div></div><span class="si-tag ${e.badge}">${e.cat}</span></div>`).join('');
+  s.classList.add('show');
+}
+
+function selSug(idx){
+  document.getElementById('sugg').classList.remove('show');
+  document.getElementById('hsInput').value='';
+  om(idx);
+}
+
+function doSearch(){
+  const q=document.getElementById('hsInput').value.trim().toLowerCase();
+  document.getElementById('sugg').classList.remove('show');
+  if(!q)return;
+  curQ=q;curCat='all';
+  document.querySelectorAll('.ft').forEach(t=>t.classList.remove('on'));
+  document.querySelector('.ft').classList.add('on');
+  af();
+  document.getElementById('exams').scrollIntoView({behavior:'smooth'});
+}
+
+function hsk(e){
+  if(e.key==='Enter')doSearch();
+  if(e.key==='Escape')document.getElementById('sugg').classList.remove('show');
+}
+
+document.addEventListener('click',e=>{if(!e.target.closest('.hs-wrap'))document.getElementById('sugg')?.classList.remove('show')});
+
+// Modal
+function om(idx){
+  const e=exams[idx];
+  document.getElementById('mBody').innerHTML=`
+    <div class="mh">
+      <div style="font-size:2rem;margin-bottom:9px">${e.icon}</div>
+      <div class="mtt">${e.name}</div>
+      <div class="ms">${e.full}</div>
+    </div>
+    <div class="msec"><h4>About</h4><p style="color:var(--t2);font-size:0.81rem;line-height:1.68">${e.about}</p></div>
+    <div class="msec"><h4>Key Details</h4>
+      <div class="mg">
+        <div class="mi"><div class="il">Conducting Body</div><div class="iv">${e.body}</div></div>
+        <div class="mi"><div class="il">Category</div><div class="iv">${e.cat}</div></div>
+        <div class="mi"><div class="il">Eligibility</div><div class="iv">${e.elig}</div></div>
+        <div class="mi"><div class="il">Age Limit</div><div class="iv">${e.age}</div></div>
+        <div class="mi"><div class="il">Frequency</div><div class="iv">${e.freq}</div></div>
+        <div class="mi"><div class="il">Exam Mode</div><div class="iv">${e.mode}</div></div>
+        <div class="mi"><div class="il">Vacancies</div><div class="iv" style="color:var(--green)">${e.vac}</div></div>
+        <div class="mi"><div class="il">Expected Salary</div><div class="iv" style="color:var(--amber)">${e.salary}</div></div>
+      </div>
+    </div>
+    <div class="msec"><h4>Syllabus</h4><p style="color:var(--t2);font-size:0.79rem;line-height:1.6">${e.syl}</p></div>
+    <div style="margin-top:4px;padding:9px 12px;background:rgba(255,80,0,0.04);border:1px solid rgba(255,80,0,0.1);border-radius:7px;font-size:0.69rem;color:rgba(255,185,130,0.8)">
+      <i class="fas fa-exclamation-triangle" style="color:var(--o);margin-right:5px"></i>
+      Not an official source. Verify all details from the official website before applying.
+    </div>
+    <a href="${e.site}" target="_blank" style="display:inline-flex;align-items:center;gap:7px;background:var(--o);color:white;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.81rem;margin-top:12px;transition:all 0.22s;box-shadow:0 0 18px rgba(255,80,0,0.28)" onmouseover="this.style.boxShadow='0 0 26px rgba(255,80,0,0.48)'" onmouseout="this.style.boxShadow='0 0 18px rgba(255,80,0,0.28)'">
+      <i class="fas fa-external-link-alt"></i> Visit Official Website
+    </a>`;
+  document.getElementById('mO').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function cmE(e){if(e.target===document.getElementById('mO'))cm();}
+function cm(){document.getElementById('mO').classList.remove('open');document.body.style.overflow='';}
+
+function tfaq(item){
+  const was=item.classList.contains('open');
+  document.querySelectorAll('.fqi').forEach(i=>i.classList.remove('open'));
+  if(!was)item.classList.add('open');
+}
+
+function go(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
+
+window.addEventListener('scroll',()=>{document.getElementById('btt').classList.toggle('show',window.scrollY>400)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')cm()});
+
+render(exams);
+</script>
+</body>
+</html>
